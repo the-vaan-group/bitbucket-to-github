@@ -1,0 +1,16 @@
+**/*.spec.ts
+**/*.spec.tsx
+**/*.stories.ts
+**/*.stories.tsx
+**/storybook*
+.dockerignore
+.editorconfig
+.git
+.gitignore
+.next
+.storybook
+Dockerfile
+README.md
+dist
+node_modules
+npm-debug.log

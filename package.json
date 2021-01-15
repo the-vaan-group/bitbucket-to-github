@@ -1,0 +1,46 @@
+{
+  "name": "bitbucket-to-github",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "license": "MIT",
+  "dependencies": {
+    "@reactivex/ix-esnext-esm": "4.0.0",
+    "@swc/cli": "0.1.27",
+    "@swc/core": "1.2.45",
+    "date-fns": "2.16.1",
+    "esm": "3.2.25",
+    "execa": "5.0.0",
+    "got": "11.8.1",
+    "joi": "17.3.0",
+    "pino": "6.10.0",
+    "pino-pretty": "4.3.0",
+    "typescript": "4.1.3",
+    "urijs": "1.19.5",
+    "zod": "1.11.11"
+  },
+  "devDependencies": {
+    "@types/pino": "6.3.5",
+    "@types/urijs": "1.19.14",
+    "@typescript-eslint/eslint-plugin": "4.13.0",
+    "@typescript-eslint/parser": "4.13.0",
+    "ava": "3.15.0",
+    "eslint": "7.17.0",
+    "prettier": "2.2.1"
+  },
+  "ava": {
+    "files": [
+      "dist/**/*.spec.js"
+    ],
+    "require": [
+      "esm"
+    ],
+    "verbose": true
+  },
+  "scripts": {
+    "build": "./bin/build.sh",
+    "lint": "eslint ./src",
+    "start": "./bin/build.sh && ./bin/start.sh",
+    "test": "./bin/build.sh && ava"
+  }
+}

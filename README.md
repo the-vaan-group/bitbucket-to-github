@@ -28,14 +28,14 @@ comment out the functions with the steps you don't wish to perform.**
 1. Clone this repository:
 
     ```
-    git clone https://github.com/the-vaan-group/bitbucket-to-github.git`
+    git clone https://github.com/the-vaan-group/bitbucket-to-github.git
     ```
 
 1. In the repository folder, create an environment variable file from the
    template:
 
     ```
-    cp -iv .env.template .env`
+    cp -iv .env.template .env
     ```
 
 1. Set the environment variables' values in the `.env` file.
